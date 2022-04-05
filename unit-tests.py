@@ -13,7 +13,6 @@ ffts_list.append(np.array([1, 1, 1, 1, 4, 1, 1, 1, 1]))
 n_bins = 8
 n_order = 5
 
-
 ltse_expected = [8, 7, 6, 5, 4, 5, 6, 7, 8]
 ltse_simulated = ltsd.compute_ltse(ffts_list)
-print ltse_expected == ltse_simulated
+assert ltse_expected == ltse_simulated
